@@ -36,6 +36,7 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         DDao.inserir(destinatario);
 
+        System.out.println("relação de destinatários cadastrados \n");
         System.out.println(DDao.pesquisar());
     }
 }

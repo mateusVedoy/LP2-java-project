@@ -34,5 +34,7 @@ public class InterfaceExcluirDestinatario extends InterfaceBase implements Coman
         Destinatario D = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
 
         DDao.excluir(D);
+        System.out.println("Destinatários ainda cadastrados: \n");
+        System.out.println(DDao.pesquisar());
     }
 }

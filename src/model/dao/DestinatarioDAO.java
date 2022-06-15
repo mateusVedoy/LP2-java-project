@@ -6,7 +6,7 @@ import java.util.List;
 
 public class DestinatarioDAO implements OperacoesDAO {
 
-    public List<Destinatario> DestinatariosArr = new ArrayList<Destinatario>();
+    static List<Destinatario> DestinatariosArr = new ArrayList<Destinatario>();
 
     public void inserir(Object obj) {
         Destinatario D = (Destinatario) obj;
