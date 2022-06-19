@@ -32,7 +32,7 @@ public class InterfaceInserirAutorizado extends InterfaceBase implements Comando
         }while(numeroImovelDestinatario == null || numeroImovelDestinatario.equals("0"));
 
         Destinatario destinatario = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
-        Destinatario returnD = (Destinatario) DDao.listaObjeto(destinatario);
+        Destinatario returnD = (Destinatario) DDao.listarObjeto(destinatario);
 
         if(returnD == null){
             JOptionPane.showMessageDialog(null, "Usuario nao encontrado para adicionar autorizado!");

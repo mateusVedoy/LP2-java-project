@@ -25,6 +25,6 @@ public interface OperacoesDAO {
 
     public List listarTodos();
 
-    public Object listaObjeto(Object obj);
+    public Object listarObjeto(Object obj);
     
 }

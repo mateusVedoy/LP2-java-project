@@ -33,7 +33,7 @@ public class InterfacePesquisarDestinatario extends InterfaceBase implements Com
 
         Destinatario destinatario = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
 
-        Destinatario returnD = (Destinatario) DDao.listaObjeto(destinatario);
+        Destinatario returnD = (Destinatario) DDao.listarObjeto(destinatario);
 
         if(returnD != null){
             JOptionPane.showMessageDialog(null, returnD);

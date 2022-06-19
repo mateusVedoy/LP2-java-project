@@ -5,7 +5,7 @@ import model.Correspondencia;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CorrespondenciaDAO  {
+public class CorrespondenciaDAO implements OperacoesDAO {
 
     static List<Correspondencia> CorrespondenciaArr = new ArrayList<Correspondencia>();
 
@@ -26,7 +26,7 @@ public class CorrespondenciaDAO  {
         return CorrespondenciaArr;
     }
 
-    public Object listaObjeto(Object obj) {
+    public Object listarObjeto(Object obj) {
         Correspondencia C = (Correspondencia) obj;
         boolean isDef = CorrespondenciaArr.contains(C);
         if(isDef){

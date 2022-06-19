@@ -32,7 +32,7 @@ public class InterfaceExcluirDestinatario extends InterfaceBase implements Coman
         }while(numeroImovelDestinatario == null || numeroImovelDestinatario.equals("0"));
 
         Destinatario D = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
-        Destinatario returnD = (Destinatario) (DDao.listaObjeto(D));
+        Destinatario returnD = (Destinatario) (DDao.listarObjeto(D));
 
         if(returnD == null){
             JOptionPane.showMessageDialog(null, "Usuário não encontrado para deleção");

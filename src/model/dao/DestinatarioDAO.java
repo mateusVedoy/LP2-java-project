@@ -31,7 +31,7 @@ public class DestinatarioDAO implements OperacoesDAO {
         return DestinatariosArr;
     }
 
-    public Object listaObjeto(Object obj) {
+    public Object listarObjeto(Object obj) {
         Destinatario D = (Destinatario) obj;
         boolean isDef = DestinatariosArr.contains(D);
         if(isDef){

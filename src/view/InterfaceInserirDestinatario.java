@@ -34,6 +34,5 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         destinatario = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
         DDao.criar(destinatario);
-        System.out.println(DDao.listarTodos());
     }
 }

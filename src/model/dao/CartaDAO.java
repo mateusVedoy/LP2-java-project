@@ -1,17 +1,18 @@
 package model.dao;
 
-import model.Movimento;
+import model.Carta;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MovimentoDAO implements OperacoesDAO {
+public class CartaDAO implements OperacoesDAO{
 
-    static List<Movimento> MovimentosArr = new ArrayList<Movimento>();
+    static List<Carta> CartaArr = new ArrayList<Carta>();
 
     public void criar(Object obj){
-        Movimento M = (Movimento) obj;
-        MovimentosArr.add(M);
+        Carta C = (Carta) obj;
+        CartaArr.add(C);
+        CorrespondenciaDAO.CorrespondenciaArr.add(C);
     }
 
     @Override
@@ -26,7 +27,7 @@ public class MovimentoDAO implements OperacoesDAO {
 
     @Override
     public List listarTodos() {
-        return MovimentosArr;
+        return null;
     }
 
     @Override

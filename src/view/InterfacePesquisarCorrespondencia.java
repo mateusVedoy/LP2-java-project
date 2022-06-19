@@ -13,6 +13,8 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
     @Override
     public void executar() {
         //TODO: implementar as ações necessárias para pesquisar se existem correspondências não entregues para um determinado destinatário, identificando se são cartas ou pacotes
+
+
     }
 
 }
