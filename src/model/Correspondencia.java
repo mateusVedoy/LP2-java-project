@@ -26,9 +26,10 @@ public class Correspondencia //Generalização ou classe mãe
 
     @Override
     public String toString() {
-        return "Correspondencia{" +
+        return "\nCorrespondencia{" +
                 "destino=" + destino +
-                '}';
+                "status=" + status +
+                "}";
     }
 
     @Override

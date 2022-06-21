@@ -26,7 +26,7 @@ public class CartaDAO extends CorrespondenciaDAO implements OperacoesDAO{
 
     @Override
     public List listarTodos() {
-        return null;
+        return CartaArr;
     }
 
     @Override

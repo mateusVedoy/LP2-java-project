@@ -23,7 +23,7 @@ public class Pacote extends Correspondencia
     }
    
     public String toString(){
-        String saida = super.toString() + "\nEmpresa entregadora: "+ empresa;
+        String saida = super.toString() + "\nEmpresa entregadora: "+ empresa+"\n";
         return saida;
     }
 
