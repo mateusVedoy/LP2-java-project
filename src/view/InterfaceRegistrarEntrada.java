@@ -52,7 +52,6 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
             do{
                 try {
                     tipoCorrespondencia = Integer.parseInt(leDados("Informe a natureza da correspondencia:\n[0 - Pacote\n1 - Carta]: "));
-                    System.out.println(tipoCorrespondencia);
 
                     if(tipoCorrespondencia > 1){
                         JOptionPane.showMessageDialog(null, "Opcao invalida. Tente novamente!");
@@ -83,7 +82,6 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
                     }
                     if(contemRecibo > 1){
                         JOptionPane.showMessageDialog(null,"Atenha-se às opções [0/1]");
-                        contemRecibo = 2;
                     }
                 }while(contemRecibo > 1);
 

@@ -1,5 +1,6 @@
 package view;
 
+import javax.swing.*;
 import controle.Comando;
 import model.Correspondencia;
 import model.Destinatario;
@@ -8,10 +9,10 @@ import model.dao.CorrespondenciaDAO;
 import model.dao.DestinatarioDAO;
 import model.dao.MovimentoDAO;
 
-import javax.swing.*;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
 
 public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
@@ -32,7 +33,12 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
             }
         }while(numeroDestinatario == null || numeroDestinatario.equals("0"));
 
+//        List<Correspondencia> Clist =  CDao.listarTodos();
+//        Iterator<Correspondencia> itC = Clist.iterator();
 
+//        while(itC.hasNext()){
+//            System.out.println(itC.next());
+//        }
 
 //        for (Iterator iterator = contatos.iterator(); iterator.hasNext(); ) {
 //            ContatoT c = (ContatoT) iterator.next();

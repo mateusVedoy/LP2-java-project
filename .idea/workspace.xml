@@ -3,28 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/CorrespondenciaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/CorrespondenciaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/DestinatarioDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/DestinatarioDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/MovimentoDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/MovimentoDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/OperacoesDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/OperacoesDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceExcluirDestinatario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceExcluirDestinatario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceInserirAutorizado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceInserirAutorizado.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceInserirDestinatario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceInserirDestinatario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarCorrespondencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarCorrespondencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarDestinatario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarDestinatario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarEntrada.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarEntrada.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarSaida.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarSaida.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/CorrespondenciaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/CorrespondenciaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DestinatarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DestinatarioDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/MovimentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/MovimentoDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/OperacoesDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/OperacoesDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceExcluirDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceExcluirDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceInserirAutorizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceInserirAutorizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceInserirDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceInserirDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarEntrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarEntrada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" afterDir="false" />
     </list>
