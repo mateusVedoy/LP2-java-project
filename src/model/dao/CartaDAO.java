@@ -5,14 +5,13 @@ import model.Carta;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CartaDAO implements OperacoesDAO{
-
+public class CartaDAO extends CorrespondenciaDAO implements OperacoesDAO{
     static List<Carta> CartaArr = new ArrayList<Carta>();
 
     public void criar(Object obj){
         Carta C = (Carta) obj;
+        super.criar(obj);
         CartaArr.add(C);
-        CorrespondenciaDAO.CorrespondenciaArr.add(C);
     }
 
     @Override

@@ -4,8 +4,7 @@ import javax.swing.*;
 import controle.Comando;
 import controle.Processador;
 import model.*;
-import model.dao.DestinatarioDAO;
-import model.dao.MovimentoDAO;
+import model.dao.*;
 
 import java.sql.SQLException;
 import java.util.Calendar;
@@ -16,16 +15,17 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
     public void executar() {
         DestinatarioDAO DDao = new DestinatarioDAO();
         MovimentoDAO MDao = new MovimentoDAO();
+        CorrespondenciaDAO CDao = new CorrespondenciaDAO();
+        PacoteDAO PDao = new PacoteDAO();
+        CartaDAO CtDao = new CartaDAO();
         Correspondencia C = null;
         String nomeDestinatario = null;
         String numeroDestinatario = null;
-        String autorizadoDestinatario = null;
         int tipoCorrespondencia = 2;
         String empresaPacote = null;
         int contemRecibo = 0;
         String funcionario = null;
         boolean recibo = false;
-        boolean isDef = false;
 
        do {
            try{
@@ -72,7 +72,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
                 }while(empresaPacote == null || empresaPacote.equals("0"));
 
                 C = new Pacote(D,empresaPacote);
-
+                PDao.criar(C);
             }else if(tipoCorrespondencia == 1){
                 do {
                     try{
@@ -90,6 +90,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
                }
 
                C = new Carta(D, recibo);
+               CtDao.criar(C);
             }
 
             do {

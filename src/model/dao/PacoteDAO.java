@@ -5,14 +5,13 @@ import model.Pacote;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PacoteDAO implements OperacoesDAO {
-
+public class PacoteDAO extends CorrespondenciaDAO implements OperacoesDAO {
     static List<Pacote> PacoteArr = new ArrayList<Pacote>();
 
     public void criar(Object obj){
         Pacote P = (Pacote) obj;
+        super.criar(obj);
         PacoteArr.add(P);
-        CorrespondenciaDAO.CorrespondenciaArr.add(P);
     }
 
     @Override
