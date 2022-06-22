@@ -75,10 +75,10 @@ public class Movimento
 
     @Override
     public String toString() {
-        return "Movimento{" +
+        return "\nMovimento{" +
                 "correspondencia=" + correspondencia +
                 ", quemRegistra='" + quemRegistra + '\'' +
-                ", data=" + data +
+                ", data=" + verData()+
                 ", quemRetira='" + quemRetira + '\'' +
                 '}';
     }

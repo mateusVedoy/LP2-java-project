@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Carta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Carta.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/CartaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/dao/CartaDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarCorrespondencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarCorrespondencia.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Correspondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Correspondencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Pacote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Pacote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/dao/CartaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/CartaDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Movimento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Movimento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Movimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Movimento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
