@@ -29,7 +29,6 @@ public class InterfacePesquisarTodosMovimentos extends InterfaceBase implements 
 
         for (Movimento mov: movimentosList){
             if(mov.getQuemRegistra().equals(funcionario)){
-                System.out.println(mov);
                 movimentosListPorFuncionario.add(mov);
             }
         }
