@@ -28,10 +28,10 @@ public class Destinatario
     public String getNumeroImovel(){
         return numeroImovel;
     }
-    
+
     public String toString(){
         return (
-                "Nome: "+ nome + "\nNumero do Imóvel: "+ numeroImovel+"\nPessoas autorizadas: "+autorizados);
+                "\nNome: "+ nome + "\nNumero do Imóvel: "+ numeroImovel+"\nPessoas autorizadas: "+autorizados);
     }
 
     public void addAutorizado(String nome){ autorizados.add(nome); }

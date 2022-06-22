@@ -24,11 +24,11 @@ public class Carta extends Correspondencia
     public boolean getRecibo(){
         return recibo;
     }
-    
+
     public String toString(){
         String saida = super.toString();
-        if (recibo) saida += "Carta com recibo\n";
-        else saida += "Carta sem recibo\n";
+        if (recibo) saida += "\nCarta com recibo\n";
+        else saida += "\nCarta sem recibo\n";
         return saida;
     }
 
