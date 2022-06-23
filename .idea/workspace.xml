@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Carta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Carta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Correspondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Correspondencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Destinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Destinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Movimento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Movimento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/controle/Processador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/controle/Processador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Carta.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Carta.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Correspondencia.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Correspondencia.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Destinatario.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Destinatario.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Movimento.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/model/Movimento.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfacePesquisarTodosMovimentos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarSaida.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/view/InterfaceRegistrarSaida.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controle/Processador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controle/Processador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +40,12 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="model" />
