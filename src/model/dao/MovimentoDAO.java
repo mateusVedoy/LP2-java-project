@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.Correspondencia;
 import model.Movimento;
 
 import java.util.ArrayList;
@@ -20,8 +21,11 @@ public class MovimentoDAO implements OperacoesDAO {
     }
 
     @Override
-    public boolean editar(Object obj, String dado) {
-        return false;
+    public void editar(Object obj, Object newObj) {
+        Movimento M = (Movimento) obj;
+        Movimento NM = (Movimento) newObj;
+        MovimentosArr.remove(M);
+        MovimentosArr.add(NM);
     }
 
     @Override
@@ -31,6 +35,14 @@ public class MovimentoDAO implements OperacoesDAO {
 
     @Override
     public Object listarObjeto(Object obj) {
-        return null;
+        Movimento M = (Movimento) obj;
+        boolean isDef = MovimentosArr.contains(M);
+        if(isDef){
+            int indexM = MovimentosArr.indexOf(M);
+            Movimento auxM = MovimentosArr.get(indexM);
+            return auxM;
+        }else{
+            return null;
+        }
     }
 }

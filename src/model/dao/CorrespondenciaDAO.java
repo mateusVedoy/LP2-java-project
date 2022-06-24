@@ -18,8 +18,8 @@ public class CorrespondenciaDAO implements OperacoesDAO {
         Correspondencia C = (Correspondencia) obj;
     }
 
-    public boolean editar(Object obj, String dado) {
-        return false;
+    public void editar(Object obj, Object newObj) {
+
     }
 
     public List listarTodos() {

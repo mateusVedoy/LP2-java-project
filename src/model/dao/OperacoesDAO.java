@@ -21,7 +21,7 @@ public interface OperacoesDAO {
     
     public void deletar(Object obj);
 
-    public boolean editar(Object obj, String dado);
+    public void editar(Object obj, Object newObj);
 
     public List listarTodos();
 

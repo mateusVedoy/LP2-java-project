@@ -21,10 +21,10 @@ public class DestinatarioDAO implements OperacoesDAO {
         }
     }
 
-    public boolean editar(Object obj, String dado)  {
+    public void editar(Object obj, Object newObj)  {
 
         Destinatario D = (Destinatario) obj;
-        return true;
+
     }
 
     public List listarTodos() {

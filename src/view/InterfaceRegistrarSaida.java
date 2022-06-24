@@ -128,6 +128,10 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
             //criar movimento de saída
             for(Movimento mld: movimentosListPorDestinatario){
                 Movimento M = new Movimento(mld.getCorrespondencia(), quemRetira, quemRegistra);
+                MDao.editar(mld, M);
+                //criar nova instancia de movimentacao
+                // chamar o editar do movimentoDAO
+                // trocar os movimentos antigos pelo novo
 //                mld.getCorrespondencia().setStatus(true);
 //                mld.setQuemRegistra(quemRegistra);
 //                mld.setQuemRetira(quemRetira);

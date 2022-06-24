@@ -20,8 +20,8 @@ public class PacoteDAO extends CorrespondenciaDAO implements OperacoesDAO {
     }
 
     @Override
-    public boolean editar(Object obj, String dado) {
-        return false;
+    public void editar(Object obj, Object newObj) {
+
     }
 
     @Override
