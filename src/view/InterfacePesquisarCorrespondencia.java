@@ -56,10 +56,14 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
             pacoteList = PDao.listarTodos();
             cartaList = CtDao.listarTodos();
 
+            String msg = "O destinatario possui ";
+
             if(pacoteList != null) {
                 for (Pacote pct: pacoteList){
                     if(pct.getDestino() == D){
-                        auxPacoteList.add(pct);
+                        if(!pct.getStatus()) {
+                            auxPacoteList.add(pct);
+                        }
                     }
                 }
             }
@@ -67,23 +71,26 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
             if(cartaList != null){
                 for (Carta ct: cartaList){
                     if(ct.getDestino() == D){
-                        auxCartaList.add(ct);
+                        if(!ct.getStatus()){
+                            auxCartaList.add(ct);
+                        }
                     }
                 }
             }
 
-            if(pacoteList.size() == 0 && cartaList.size() == 0){
+            if(auxPacoteList.size() == 0 && auxCartaList.size() == 0){
                 JOptionPane.showMessageDialog(null, "Não há correspondencias para o destinatario");
-            }else if(pacoteList.size() != 0 && cartaList.size() == 0){
+            }else if(auxPacoteList.size() != 0 && auxCartaList.size() == 0){
                 JOptionPane.showMessageDialog(null, "O destinatario possui Pacotes: \n"+pacoteList);
-            }else if(pacoteList.size() == 0 && cartaList.size() != 0){
+            }else if(auxPacoteList.size() == 0 && auxCartaList.size() > 0){
                 JOptionPane.showMessageDialog(null, "O destinatario possui Cartas: \n"+cartaList);
-            }else if(pacoteList.size() != 0 && cartaList.size() != 0){
+            }else{
                 correspondenciasList.addAll(cartaList);
                 correspondenciasList.addAll(pacoteList);
                 JOptionPane.showMessageDialog(null, "O destinatario possui cartas e pacotes: \n"+correspondenciasList);
             }
-
+            auxCartaList.clear();
+            auxPacoteList.clear();
         }else{
             JOptionPane.showMessageDialog(null, "Usuario nao cadastrado");
         }
