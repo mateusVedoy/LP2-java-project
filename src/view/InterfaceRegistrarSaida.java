@@ -87,7 +87,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
                 quemRetira = nomeDestinatario;
 
-            } else if (naturezaOpcao == 1) {
+            } else {
                 int indexOfAutorizado = -1;
                 do {
                     do {
@@ -111,7 +111,6 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
                 } while (indexOfAutorizado == -1);
             }
 
-            //recupera nome do funcionario
             do{
                 try{
                     quemRegistra = leDados("Informe o funcionario do movimento: ");
@@ -120,22 +119,10 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
                 }
             }while(quemRegistra == null || quemRegistra.equals("0"));
 
-            //marcar correspondencias do endereco passado como entregues
-//            for(Movimento mld: movimentosListPorDestinatario){
-//                mld.getCorrespondencia().setStatus(true);
-//            }
-
             //criar movimento de saída
             for(Movimento mld: movimentosListPorDestinatario){
                 Movimento M = new Movimento(mld.getCorrespondencia(), quemRetira, quemRegistra);
                 MDao.editar(mld, M);
-                //criar nova instancia de movimentacao
-                // chamar o editar do movimentoDAO
-                // trocar os movimentos antigos pelo novo
-//                mld.getCorrespondencia().setStatus(true);
-//                mld.setQuemRegistra(quemRegistra);
-//                mld.setQuemRetira(quemRetira);
-//                mld.setData(new GregorianCalendar());
             }
             JOptionPane.showMessageDialog(null, "Correspondencias entregues e movimento(s) de saída criado(s)");
         }else {

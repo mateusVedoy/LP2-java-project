@@ -56,8 +56,6 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
             pacoteList = PDao.listarTodos();
             cartaList = CtDao.listarTodos();
 
-            String msg = "O destinatario possui ";
-
             if(pacoteList != null) {
                 for (Pacote pct: pacoteList){
                     if(pct.getDestino() == D){

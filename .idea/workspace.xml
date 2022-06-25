@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/GerCorrespondencia/controle/Processador.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GerCorrespondencia/controle/Processador.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controle/Processador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controle/Processador.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

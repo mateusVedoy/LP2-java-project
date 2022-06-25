@@ -4,6 +4,7 @@
  */
 package controle;
 
+import javax.swing.*;
 import java.util.HashMap;
 
 /**
@@ -39,10 +40,15 @@ public class Processador {
             comando.executar();
         } catch (ClassNotFoundException ex) {
             System.out.println(ex);
+            JOptionPane.showMessageDialog(null, "Classe não encontrada");
         } catch (InstantiationException iex) {
             System.out.println(iex);
+            JOptionPane.showMessageDialog(null, "Instanciacao nao permitida");
         } catch (IllegalAccessException iaex) {
             System.out.println(iaex);
+            JOptionPane.showMessageDialog(null, "Acesso nao autorizado");
+        }catch (NullPointerException nex){
+            System.out.println(nex);
         }
 
     }
