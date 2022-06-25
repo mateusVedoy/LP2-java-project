@@ -89,6 +89,12 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
             } else {
                 int indexOfAutorizado = -1;
+
+                if(D.getAutorizados().size() == 0){
+                    JOptionPane.showMessageDialog(null, "Destinatario sem autorizados cadastrados");
+                    return;
+                }
+
                 do {
                     do {
                         try{
@@ -98,9 +104,8 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
                         }
                     }while(autorizadoDestinatario == null || autorizadoDestinatario.equals("0"));
 
-                    //verificar se autorizado está na relação do usuario
+                    //verificar se autorizado está na relação do destinatario
                     autorizadosdestinatarioList = D.getAutorizados();
-
                     indexOfAutorizado = autorizadosdestinatarioList.indexOf(autorizadoDestinatario);
 
                     if (indexOfAutorizado == -1) {
