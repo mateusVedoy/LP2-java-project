@@ -22,9 +22,10 @@ public class DestinatarioDAO implements OperacoesDAO {
     }
 
     public void editar(Object obj, Object newObj)  {
-
         Destinatario D = (Destinatario) obj;
-
+        Destinatario ND = (Destinatario) newObj;
+        DestinatariosArr.remove(D);
+        DestinatariosArr.add(ND);
     }
 
     public List listarTodos() {
