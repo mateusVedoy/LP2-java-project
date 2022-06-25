@@ -17,7 +17,7 @@ public class InterfaceExcluirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do destinatário a ser deletado");
+                nomeDestinatario = leDados("Informe o nome do destinatario a ser deletado");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -25,7 +25,7 @@ public class InterfaceExcluirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                numeroImovelDestinatario = leDados("Informe o numero do imovel do destinatário a ser deletado");
+                numeroImovelDestinatario = leDados("Informe o numero do imovel do destinatario a ser deletado");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -35,10 +35,10 @@ public class InterfaceExcluirDestinatario extends InterfaceBase implements Coman
         Destinatario returnD = (Destinatario) (DDao.listarObjeto(D));
 
         if(returnD == null){
-            JOptionPane.showMessageDialog(null, "Usuário não encontrado para deleção");
+            JOptionPane.showMessageDialog(null, "Usuario não encontrado");
         }else{
             DDao.deletar(D);
-            JOptionPane.showMessageDialog(null, "Usuário deletado com sucesso");
+            JOptionPane.showMessageDialog(null, "Usuario deletado com sucesso");
         }
     }
 }

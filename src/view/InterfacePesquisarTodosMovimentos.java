@@ -19,7 +19,7 @@ public class InterfacePesquisarTodosMovimentos extends InterfaceBase implements 
 
         do {
             try{
-                funcionario = leDados("Informe o funcionario para buscar os movimentos: ");
+                funcionario = leDados("Informe o funcionario para buscar os movimentos");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -36,7 +36,7 @@ public class InterfacePesquisarTodosMovimentos extends InterfaceBase implements 
         if(movimentosListPorFuncionario.size() == 0){
             JOptionPane.showMessageDialog(null, "Nao ha movimentos registrados");
         }else {
-            JOptionPane.showMessageDialog(null, "Movimentos deste funcionário: \n"+movimentosListPorFuncionario);
+            JOptionPane.showMessageDialog(null, "Movimentos deste funcionario: \n"+movimentosListPorFuncionario);
         }
     }
 

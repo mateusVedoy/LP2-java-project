@@ -29,7 +29,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
 
        do {
            try{
-               nomeDestinatario = leDados("Informe o nome do destinatario da correspondencia: ");
+               nomeDestinatario = leDados("Informe o nome do destinatario da correspondencia");
            }catch(CampoVazioException ex){
                JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
            }
@@ -37,7 +37,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
 
         do {
             try{
-                numeroDestinatario = leDados("Informe o numero da residencia desse destinatario: ");
+                numeroDestinatario = leDados("Informe o numero da residencia desse destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -51,7 +51,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
 
             do{
                 try {
-                    tipoCorrespondencia = Integer.parseInt(leDados("Informe a natureza da correspondencia:\n[0 - Pacote\n1 - Carta]: "));
+                    tipoCorrespondencia = Integer.parseInt(leDados("Informe a natureza da correspondencia:\n[0 - Pacote\n1 - Carta]"));
 
                     if(tipoCorrespondencia > 1){
                         JOptionPane.showMessageDialog(null, "Opcao invalida. Tente novamente!");
@@ -65,7 +65,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
             if(tipoCorrespondencia == 0){
                 do{
                     try{
-                        empresaPacote = leDados("Informe a empresa remetente: ");
+                        empresaPacote = leDados("Informe a empresa remetente");
                     }catch(CampoVazioException ex) {
                         JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                     }
@@ -81,7 +81,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
                         JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                     }
                     if(contemRecibo > 1){
-                        JOptionPane.showMessageDialog(null,"Atenha-se às opções [0/1]");
+                        JOptionPane.showMessageDialog(null,"Atenha-se às opcoes [0/1]");
                     }
                 }while(contemRecibo > 1);
 
@@ -95,7 +95,7 @@ public class InterfaceRegistrarEntrada extends InterfaceBase implements Comando 
 
             do {
                 try{
-                    funcionario = leDados("Informe o nome do funcionario que recebeu a correspondencia: ");
+                    funcionario = leDados("Informe o nome do funcionario que recebeu a correspondencia");
                 }catch(CampoVazioException ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                 }

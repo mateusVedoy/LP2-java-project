@@ -18,7 +18,7 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do novo destinatario: ");
+                nomeDestinatario = leDados("Informe o nome do novo destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -26,7 +26,7 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                numeroImovelDestinatario = leDados("Informe o número do imovel do destinatario: ");
+                numeroImovelDestinatario = leDados("Informe o numero do imovel do destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }

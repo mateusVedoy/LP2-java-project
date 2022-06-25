@@ -27,8 +27,8 @@ public class Correspondencia //Generalização ou classe mãe
     @Override
     public String toString() {
         return "\nCorrespondencia:" +
-                "\nDados do destinatário:" + destino +
-                "\nStatus:" + (status ? "Entregue" : "Nao entregue");
+                "\nDados do destinatario:" + destino +
+                "\nStatus: " + (status ? "Entregue" : "Nao entregue");
     }
 
     @Override

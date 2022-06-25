@@ -32,7 +32,7 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do destinatario para buscar as correspondencias abertas: ");
+                nomeDestinatario = leDados("Informe o nome do destinatario para buscar as correspondencias abertas");
 
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
@@ -41,7 +41,7 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
 
         do {
             try{
-                numeroDestinatario = leDados("Informe o numero da residencia do destinarario para buscar as correspondencias abertas: ");
+                numeroDestinatario = leDados("Informe o numero da residencia do destinarario para buscar as correspondencias abertas");
 
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
@@ -77,7 +77,7 @@ public class InterfacePesquisarCorrespondencia extends InterfaceBase implements 
             }
 
             if(auxPacoteList.size() == 0 && auxCartaList.size() == 0){
-                JOptionPane.showMessageDialog(null, "Não há correspondencias para o destinatario");
+                JOptionPane.showMessageDialog(null, "Nao ha correspondencias para o destinatario");
             }else if(auxPacoteList.size() != 0 && auxCartaList.size() == 0){
                 JOptionPane.showMessageDialog(null, "O destinatario possui Pacotes: \n"+pacoteList);
             }else if(auxPacoteList.size() == 0 && auxCartaList.size() > 0){

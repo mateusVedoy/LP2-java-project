@@ -25,7 +25,7 @@ public class InterfacePesquisarMovimentosDestinatario extends InterfaceBase impl
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do destinatario para buscar os movimentos: ");
+                nomeDestinatario = leDados("Informe o nome do destinatario para buscar os movimentos");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -33,7 +33,7 @@ public class InterfacePesquisarMovimentosDestinatario extends InterfaceBase impl
 
         do {
             try{
-                nroDestinatario = leDados("Informe o numero do endereco do destinatario: ");
+                nroDestinatario = leDados("Informe o numero do endereco do destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -55,7 +55,7 @@ public class InterfacePesquisarMovimentosDestinatario extends InterfaceBase impl
             if(movimentosListPorDestinatario.size() > 0){
                 JOptionPane.showMessageDialog(null, "Movimentos deste destinatario: \n"+movimentosListPorDestinatario);
             }else{
-                JOptionPane.showMessageDialog(null, "Não há movimentos para o destinatario");
+                JOptionPane.showMessageDialog(null, "Nao ha movimentos para o destinatario");
             }
 
         }else{

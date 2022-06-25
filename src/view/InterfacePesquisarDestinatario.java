@@ -17,7 +17,7 @@ public class InterfacePesquisarDestinatario extends InterfaceBase implements Com
 
         do {
             try{
-                nomeDestinatario = leDados("Informe destinatario para pesquisar: ");
+                nomeDestinatario = leDados("Informe destinatario para pesquisar");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -25,7 +25,7 @@ public class InterfacePesquisarDestinatario extends InterfaceBase implements Com
 
         do {
             try{
-                numeroImovelDestinatario = leDados("Informe o numero do imóvel do destinatario: ");
+                numeroImovelDestinatario = leDados("Informe o numero do imovel do destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }

@@ -37,7 +37,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
         do {
             try {
-                numeroDestinatario = leDados("Informe o numero do imovel: ");
+                numeroDestinatario = leDados("Informe o numero do imovel");
             } catch (CampoVazioException ex) {
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -59,7 +59,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
             do {
                 do {
                     try {
-                        nomeDestinatario = leDados("Informe o nome do destinatario: ");
+                        nomeDestinatario = leDados("Informe o nome do destinatario");
                     } catch (CampoVazioException ex) {
                         JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                     }
@@ -74,9 +74,9 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
             do {
                 try {
-                    naturezaOpcao = Integer.parseInt(leDados("Quem retira é destinatario(0) ou autorizado(1): "));
+                    naturezaOpcao = Integer.parseInt(leDados("Quem retira? destinatario(0) ou autorizado(1)"));
                     if (naturezaOpcao > 1 || naturezaOpcao < 0) {
-                        JOptionPane.showMessageDialog(null, "Atenha-se a uma opção válida");
+                        JOptionPane.showMessageDialog(null, "Atenha-se a uma opção valida");
                     }
                 } catch (CampoVazioException ex) {
                     JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
@@ -98,7 +98,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
                 do {
                     do {
                         try{
-                            autorizadoDestinatario = leDados("Informe o autorizado: ");
+                            autorizadoDestinatario = leDados("Informe o autorizado");
                         }catch(CampoVazioException ex) {
                             JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                         }
@@ -118,7 +118,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
 
             do{
                 try{
-                    quemRegistra = leDados("Informe o funcionario do movimento: ");
+                    quemRegistra = leDados("Informe o funcionario do movimento");
                 }catch(CampoVazioException ex) {
                     JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                 }
@@ -131,7 +131,7 @@ public class InterfaceRegistrarSaida extends InterfaceBase implements Comando {
             }
             JOptionPane.showMessageDialog(null, "Correspondencias entregues e movimento(s) de saída criado(s)");
         }else {
-            JOptionPane.showMessageDialog(null, "Não há correspondencias pendentes para o numero de imovel informado");
+            JOptionPane.showMessageDialog(null, "Nao ha correspondencias pendentes para o numero de imovel informado");
         }
     }
 }

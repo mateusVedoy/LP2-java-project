@@ -17,7 +17,7 @@ public class InterfaceInserirAutorizado extends InterfaceBase implements Comando
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do destinatario a ter pessoa autorizada cadastrada: ");
+                nomeDestinatario = leDados("Informe o nome do destinatario a ter pessoa autorizada cadastrada");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -25,7 +25,7 @@ public class InterfaceInserirAutorizado extends InterfaceBase implements Comando
 
         do {
             try{
-                numeroImovelDestinatario = leDados("Informe o numero do imóvel do destinatario: ");
+                numeroImovelDestinatario = leDados("Informe o numero do imovel do destinatario");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -39,7 +39,7 @@ public class InterfaceInserirAutorizado extends InterfaceBase implements Comando
         }else{
             do {
                 try{
-                    nomeAutorizado = leDados("Informe o nome do autorizado: ");
+                    nomeAutorizado = leDados("Informe o nome do autorizado");
                 }catch(CampoVazioException ex){
                     JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
                 }
