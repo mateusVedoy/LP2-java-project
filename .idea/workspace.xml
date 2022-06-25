@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Correspondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Correspondencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Destinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Destinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceExcluirDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceExcluirDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceInserirAutorizado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceInserirAutorizado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceInserirDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceInserirDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarCorrespondencia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarMovimentosDestinatario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarMovimentosDestinatario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfacePesquisarTodosMovimentos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarEntrada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarEntrada.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceRegistrarSaida.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/InterfaceSair.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceSair.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/InterfaceBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/InterfaceBase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
