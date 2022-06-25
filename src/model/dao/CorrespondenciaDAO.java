@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.Carta;
 import model.Correspondencia;
 
 import java.util.ArrayList;
@@ -16,10 +17,17 @@ public class CorrespondenciaDAO implements OperacoesDAO {
 
     public void deletar(Object obj) {
         Correspondencia C = (Correspondencia) obj;
+        boolean isCDefined = CorrespondenciaArr.contains(C);
+        if(isCDefined){
+            CorrespondenciaArr.remove(C);
+        }
     }
 
     public void editar(Object obj, Object newObj) {
-
+        Correspondencia C = (Correspondencia) obj;
+        Correspondencia NC = (Correspondencia) newObj;
+        CorrespondenciaArr.remove(C);
+        CorrespondenciaArr.add(NC);
     }
 
     public List listarTodos() {
