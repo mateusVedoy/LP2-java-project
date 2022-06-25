@@ -1,5 +1,6 @@
 package model.dao;
 
+import model.Carta;
 import model.Pacote;
 
 import java.util.ArrayList;
@@ -16,12 +17,19 @@ public class PacoteDAO extends CorrespondenciaDAO implements OperacoesDAO {
 
     @Override
     public void deletar(Object obj) {
-
+        Pacote P = (Pacote) obj;
+        boolean isPDefined = PacoteArr.contains(P);
+        if(isPDefined){
+            PacoteArr.remove(P);
+        }
     }
 
     @Override
     public void editar(Object obj, Object newObj) {
-
+        Pacote P = (Pacote) obj;
+        Pacote NP = (Pacote) newObj;
+        PacoteArr.remove(P);
+        PacoteArr.add(NP);
     }
 
     @Override
