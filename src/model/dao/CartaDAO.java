@@ -16,12 +16,19 @@ public class CartaDAO extends CorrespondenciaDAO implements OperacoesDAO{
 
     @Override
     public void deletar(Object obj) {
-
+        Carta C = (Carta) obj;
+        boolean isCDefined = CartaArr.contains(C);
+        if(isCDefined){
+            CartaArr.remove(C);
+        }
     }
 
     @Override
     public void editar(Object obj, Object newObj) {
-
+        Carta C = (Carta) obj;
+        Carta NC = (Carta) newObj;
+        CartaArr.remove(C);
+        CartaArr.add(NC);
     }
 
     @Override
@@ -31,6 +38,14 @@ public class CartaDAO extends CorrespondenciaDAO implements OperacoesDAO{
 
     @Override
     public Object listarObjeto(Object obj) {
-        return null;
+        Carta C = (Carta) obj;
+        boolean isCDefined = CartaArr.contains(C);
+        if(isCDefined){
+            int indexC = CartaArr.indexOf(C);
+            Carta auxC = CartaArr.get(indexC);
+            return auxC;
+        }else{
+            return null;
+        }
     }
 }
