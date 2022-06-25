@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc6aadf8-ffe7-42cd-b7a2-93d4aa6b3652" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/model/dao/DestinatarioDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/DestinatarioDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/dao/MovimentoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/dao/MovimentoDAO.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

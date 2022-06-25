@@ -17,7 +17,11 @@ public class MovimentoDAO implements OperacoesDAO {
 
     @Override
     public void deletar(Object obj) {
-
+        Movimento M = (Movimento) obj;
+        boolean isMDefined = MovimentosArr.contains(M);
+        if(isMDefined){
+            MovimentosArr.remove(M);
+        }
     }
 
     @Override
