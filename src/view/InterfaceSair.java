@@ -24,7 +24,7 @@ public class InterfaceSair implements Comando {
             JOptionPane.showMessageDialog(null, "Encerrando...");
             System.exit(0);
         } else if (n == JOptionPane.NO_OPTION) {
-            JOptionPane.showMessageDialog(null, "Então escolha outra opcao...");
+            JOptionPane.showMessageDialog(null, "Entao escolha outra opcao...");
         }
     }
 }
