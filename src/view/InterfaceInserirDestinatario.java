@@ -18,7 +18,7 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                nomeDestinatario = leDados("Informe o nome do novo destinatário: ");
+                nomeDestinatario = leDados("Informe o nome do novo destinatario: ");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
@@ -26,13 +26,18 @@ public class InterfaceInserirDestinatario extends InterfaceBase implements Coman
 
         do {
             try{
-                numeroImovelDestinatario = leDados("Informe o número do imóvel do destinatário: ");
+                numeroImovelDestinatario = leDados("Informe o número do imovel do destinatario: ");
             }catch(CampoVazioException ex){
                 JOptionPane.showMessageDialog(null, ex.getMessage() + " novamente");
             }
         }while(numeroImovelDestinatario == null || numeroImovelDestinatario.equals("0"));
 
         destinatario = new Destinatario(nomeDestinatario, numeroImovelDestinatario);
-        DDao.criar(destinatario);
+        Destinatario D = (Destinatario) DDao.listarObjeto(destinatario);
+        if(D != null){
+            JOptionPane.showMessageDialog(null, "Destinatario cadastrado anteriormente");
+        }else{
+            DDao.criar(destinatario);
+        }
     }
 }
